@@ -20,7 +20,7 @@ public class PassengerPlane extends Plane{
     public String toString() {
         return super.toString().replace("}", ", passengersCapacity=" + passengersCapacity + '}');
     }
-//заменить o
+
     @Override
     public boolean equals(Object object) {
         if (this == object) {

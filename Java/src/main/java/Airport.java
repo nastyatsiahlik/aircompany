@@ -98,7 +98,7 @@ public class Airport {
     public Airport sortByMaxLoadCapacity() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane firstPlan, Plane secondPlane) {
-                return firstPlan.getMinLoadCapacity() - secondPlane.getMinLoadCapacity();
+                return firstPlan.getMaxLoadCapacity() - secondPlane.getMaxLoadCapacity();
             }
         });
         return this;

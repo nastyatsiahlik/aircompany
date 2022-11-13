@@ -5,21 +5,17 @@ import models.ExperimentalTypes;
 
 public class ExperimentalPlane extends Plane{
 
-    private ExperimentalTypes experimentalTypes;
+    private ExperimentalTypes experimentalType;
     private ClassificationLevel classificationLevel;
 
-    public ExperimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes experimentalTypes, ClassificationLevel classificationLevel) {
+    public ExperimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes experimentalType, ClassificationLevel classificationLevel) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
-        this.experimentalTypes = experimentalTypes;
+        this.experimentalType = experimentalType;
         this.classificationLevel = classificationLevel;
     }
 
     public ClassificationLevel getClassificationLevel(){
         return classificationLevel;
-    }
-
-    public void setClassificationLevel(ClassificationLevel classificationLevel){
-        this.classificationLevel = classificationLevel;
     }
 
     @Override
